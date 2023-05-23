@@ -77,6 +77,17 @@ $ciboGatto = new Prodotto($gatto, "Cibo per gatti", "Cibo", 8.99, "img/cibo_gatt
 $giocoGatto = new Prodotto($gatto, "Gioco per gatti", "Gioco", 4.99, "img/gioco_gatto.jpeg");
 $cucciaGatto = new Prodotto($gatto, "Cuccia per gatti", "Cuccia", 19.99, "img/cuccia_gatto.jpeg");
 
+
+// Stampa delle card
+$card = new Card();
+echo "<div class='container'>";
+$card->stampaProdotto($ciboCane);
+$card->stampaProdotto($giocoCane);
+$card->stampaProdotto($cucciaCane);
+$card->stampaProdotto($ciboGatto);
+$card->stampaProdotto($giocoGatto);
+$card->stampaProdotto($cucciaGatto);
+
 ?>
 
 <!DOCTYPE html>

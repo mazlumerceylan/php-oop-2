@@ -48,6 +48,19 @@ class Prodotto {
       return $this->immagine;
   }
 }
+
+
+class Card {
+  public function stampaProdotto(Prodotto $prodotto) {
+      echo "<div class='card'>";
+      echo "<img src='".$prodotto->getImmagine()."' alt='".$prodotto->getNome()."' />";
+      echo "<h2>".$prodotto->getNome()."</h2>";
+      echo "<p>".$prodotto->getTipo()."</p>";
+      echo "<p>".$prodotto->getPrezzo()."€</p>";
+      echo "<p>Categoria: ".$prodotto->getCategoria()->getNome()."</p>";
+      echo "</div>";
+  }
+}
 ?>
 
 <!DOCTYPE html>

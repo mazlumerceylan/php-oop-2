@@ -61,6 +61,11 @@ class Card {
       echo "</div>";
   }
 }
+
+
+// Creazione delle categorie
+$cane = new Categoria("Cane");
+$gatto = new Categoria("Gatto");
 ?>
 
 <!DOCTYPE html>

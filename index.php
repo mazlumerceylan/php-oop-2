@@ -66,6 +66,17 @@ class Card {
 // Creazione delle categorie
 $cane = new Categoria("Cane");
 $gatto = new Categoria("Gatto");
+
+
+
+// Creazione dei prodotti
+$ciboCane = new Prodotto($cane, "Cibo per cani", "Cibo", 10.99, "img/cibo_cane.jpeg");
+$giocoCane = new Prodotto($cane, "Gioco per cani", "Gioco", 5.99, "img/gioco_cane.jpeg");
+$cucciaCane = new Prodotto($cane, "Cuccia per cani", "Cuccia", 20.99, "img/cuccia_cane.avif");
+$ciboGatto = new Prodotto($gatto, "Cibo per gatti", "Cibo", 8.99, "img/cibo_gatto.webp");
+$giocoGatto = new Prodotto($gatto, "Gioco per gatti", "Gioco", 4.99, "img/gioco_gatto.jpeg");
+$cucciaGatto = new Prodotto($gatto, "Cuccia per gatti", "Cuccia", 19.99, "img/cuccia_gatto.jpeg");
+
 ?>
 
 <!DOCTYPE html>
